@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as m
 
 D = {}
 
@@ -26,9 +26,9 @@ for word, count in sorted_items:
     labels.append(word)
     values.append(count)
 
-plt.figure(figsize=(10, 6))
-plt.bar(labels, values)
-plt.xlabel("Word")
-plt.ylabel("frequency")
-plt.tight_layout()
-plt.show()
+m.figure(figsize=(10, 6))
+m.bar(labels, values)
+m.xlabel("Word")
+m.ylabel("frequency")
+m.tight_layout()
+m.show()
